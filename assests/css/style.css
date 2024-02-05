@@ -74,25 +74,6 @@ i {
     font-size: 1.3rem;
 }
 
-/* Debug */
-
-.debug.search_bar {
-    background-color: antiquewhite;
-}
-
-.debug.search_bar {
-    background-color: #6b7376;
-}
-
-.debug.chat_list {
-    background-color: whitesmoke;
-}
-
-.debug.left_side_img,
-.debug.preview_text {
-    border: 1px dashed;
-}
-
 /* left side - menu */
 .icons_menu.right_side{
         padding: 0.7rem 1rem;
@@ -125,18 +106,32 @@ i {
     
 }
 
-.notification_text{
+.notification_text,
+.name_profile_prev{
     font-size: 0.9rem;
     padding-top: 0.6rem;
-    left: 0.5rem;
+    padding-left: 0.25rem;
 
-    & .notification_activeted{
-        font-size: 0.8rem;
-        color: var(--zapp-darker);
-        text-decoration: underline;
-    }
 }
 
+.name_profile_prev{
+    margin-top: 0.3rem;
+    font-size: 1rem;
+}
+
+.chat_list_card{
+    background-color: var(--zapp-lighter);
+    border-bottom: 1px solid var(--zapp-light);
+}
+
+.notification_activeted, 
+.text_preview
+{
+    font-size: 0.8rem;
+    color: var(--zapp-darker);
+    text-decoration: underline;
+    padding-left: 0.25rem;
+}
 .chat_list {
     height: calc(100% - 13rem);
     overflow-y: scroll;
@@ -264,6 +259,16 @@ i {
         height: 100%;
 
     }
+
+    .hidden-md{
+        display: none;
+    }
+
+    .chat_list{
+        height: 100%;
+    }
+
+
 }
 
 @media screen and (max-width: 540px) {
