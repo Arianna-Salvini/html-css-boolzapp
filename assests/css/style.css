@@ -195,5 +195,12 @@
     .hidden-sm {
         display: none;
     }
+    .left_menu{
+        width: 100%;
+    }
+
+    .col_right{
+        width: 100%;
+    }
 
 }
