@@ -1,6 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+}
+
+/* Utility */
+
+:root {
+    --zapp-bg-top: #009688;
+    --zapp-bg-bottom: #dbdbd2;
+    --zapp-light: #eaeaea;
+    --zapp-lighter: #ffffff;
+    --zapp-darkest: #000000;
+    --zapp-darker: #6b7376;
+    --zapp-dark: #b1b1b1;
+    --zapp-highlight: #8edafc;
+    --zapp-sent-bubble: #d5f9ba;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        var(--zapp-bg-top) 0%,
+        var(--zapp-bg-top) 10%,
+        var(--zapp-bg-bottom) 10%,
+        var(--zapp-bg-bottom) 100%
+      );
 }
