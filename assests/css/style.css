@@ -20,7 +20,7 @@
 }
 
 .background {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: linear-gradient(
         to bottom,
@@ -29,4 +29,50 @@
         var(--zapp-bg-bottom) 10%,
         var(--zapp-bg-bottom) 100%
       );
+      overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.container{
+    background-color: var(--zapp-light);
+    width: calc(100vw - 25%);
+    height: calc(100% - 2rem);
+}
+
+.row{
+    display: flex;
+    height: 100%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+.col-11 {
+    width: calc((100% / 12) *11);
+}
+
+.col-8 {
+    width: calc((100% / 12) *8);
+}
+
+.col-4 {
+    width: calc((100% / 12) *4);
+}
+
+.col-1 {
+    width: calc((100% / 12) *1);
+}
+
+
+/* Debug */
+.debug{
+    border: 1px dashed;
+}
+
+/* left side - menu */
+
+
+/* right dìside - chat */
