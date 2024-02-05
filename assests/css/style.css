@@ -60,34 +60,21 @@
 }
 
 .left_side_img {
-    width: 5rem;
+    width: 4.5rem;
     padding: 0.5rem;
-    height: 5rem;
+    height: 4.5rem;
 }
 
 .right_side {
-    width: calc(100% - 5rem);
-    height: 5rem;
+    width: calc(100% - 4.5rem);
+    height: 4.5rem;
 }
 
 i {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 /* Debug */
-
-.debug.menu_icon,
-.debug.right_menu {
-    background-color: coral;
-}
-
-.debug.icon_user {
-    background-color: burlywood;
-}
-
-.debug.notify {
-    background: paleturquoise;
-}
 
 .debug.search_bar {
     background-color: antiquewhite;
@@ -107,17 +94,47 @@ i {
 }
 
 /* left side - menu */
+.icons_menu.right_side{
+        padding: 0.7rem 1rem;
+}
+
+.notify{
+    background-color: var(--zapp-highlight);
+}
 
 .search_bar {
     height: 3rem;
 }
 
-.fa-bell-slash {
-    width: 5rem;
+.icon_search{
+    width: 4.5rem;
     height: 3rem;
-    color: var(--zapp-lighter);
+    padding: 0.8rem;
     text-align: center;
-    align-self: center;
+}
+
+.fa-bell-slash {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.8rem;
+    margin: 0.75rem;
+    color: var(--zapp-highlight);
+    background-color: var(--zapp-light);
+    border-radius: 50%;
+    text-align: center;
+    
+}
+
+.notification_text{
+    font-size: 0.9rem;
+    padding-top: 0.6rem;
+    left: 0.5rem;
+
+    & .notification_activeted{
+        font-size: 0.8rem;
+        color: var(--zapp-darker);
+        text-decoration: underline;
+    }
 }
 
 .chat_list {
@@ -131,21 +148,20 @@ i {
 }
 
 .chat_menu {
-    height: 5rem;
+    height: 4.5rem;
     justify-content: space-between;
+    
 }
 
-.info_user_profile {
-    padding: 1rem 0.5rem;
-
-    & .profile_name {
-        font-size: 1.2rem;
-        padding: 0.15rem 0;
+.profile_name {
+        font-size: 1rem;
+       line-height: 1.5rem;
+       margin-top: 0.8rem;
     }
-}
 
 .last_access {
     color: var(--zapp-dark);
+    font-size: 0.8rem;
 }
 
 .left_menu,
@@ -176,7 +192,7 @@ i {
 /* Chat */
 .chat_massages_box {
     width: 100%;
-    height: calc(100% - 10rem);
+    height: calc(100% - 9rem);
     background-image: url(../img/mine.jpg);
     overflow-y: scroll;
 }
@@ -185,7 +201,7 @@ i {
 
 .chat_text_typing {
     background-color: var(--zapp-tiping);
-    height: 5rem;
+    height: 4.5rem;
     width: 100%;
     justify-items: space-around;
     align-content: center;
@@ -200,13 +216,13 @@ i {
 
 .emoj_btn,
 .audio_message_btn {
-    width: 5rem;
+    width: 4.5rem;
     color: var(--zapp-darker);
 }
 
 
 [type="text"] {
-    width: calc(100% - 10rem);
+    width: calc(100% - 9rem);
     height: 80%;
     padding-left: 1rem;
     margin: auto;
@@ -232,7 +248,7 @@ i {
     }
 
     .col-right {
-        width: calc(100% - 5rem);
+        width: calc(100% - 4.5rem);
     }
 
     .right_side {
