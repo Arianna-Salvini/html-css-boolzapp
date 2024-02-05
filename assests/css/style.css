@@ -22,58 +22,103 @@
 .background {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(
-        to bottom,
-        var(--zapp-bg-top) 0%,
-        var(--zapp-bg-top) 10%,
-        var(--zapp-bg-bottom) 10%,
-        var(--zapp-bg-bottom) 100%
-      );
-      overflow-y: hidden;
+    background: linear-gradient(to bottom,
+            var(--zapp-bg-top) 0%,
+            var(--zapp-bg-top) 10%,
+            var(--zapp-bg-bottom) 10%,
+            var(--zapp-bg-bottom) 100%);
+    overflow-y: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container{
+.container {
     background-color: var(--zapp-light);
     width: calc(100vw - 25%);
     height: calc(100% - 2rem);
+
 }
 
-.row{
+.row {
     display: flex;
     height: 100%;
 }
 
-.col-12{
-    width: 100%;
+.d_flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.col-11 {
-    width: calc((100% / 12) *11);
+.col_left{
+    width: 35%;
 }
 
-.col-8 {
-    width: calc((100% / 12) *8);
+.col-right{
+    width: calc(100% - 35%);
 }
 
-.col-4 {
-    width: calc((100% / 12) *4);
+.left_side_img {
+    width: 5rem;
+    padding: 0.25rem;
+    height: 5rem;
 }
 
-.col-1 {
-    width: calc((100% / 12) *1);
+.right_side {
+    width: calc(100% - 5rem);
+    height: 5rem;
 }
-
 
 /* Debug */
-.debug{
+
+.debug.menu_icon {
+    background-color: coral;
+}
+
+.debug.icon_user {
+    background-color: burlywood;
+}
+
+.debug.notify {
+    background: paleturquoise;
+}
+
+.debug.search_bar {
+    background-color: antiquewhite;
+}
+
+.debug.search_bar {
+    background-color: #6b7376;
+}
+
+.debug.preview_chat{
+    background-color: whitesmoke;
+}
+
+.debug.left_side_img,
+.debug.preview_text
+{
     border: 1px dashed;
 }
 
 /* left side - menu */
 
+.search_bar {
+    height: 3rem;
+}
+
+.fa-bell-slash {
+    width: 5rem;
+    height: 3rem;
+    color: var(--zapp-lighter);
+    text-align: center;
+    align-self: center;
+}
+
+.preview_chat{
+    height: calc(100% - 13rem);
+    overflow: scroll;
+}
 
 /* right dìside - chat */
 
@@ -81,53 +126,53 @@
 
 @media screen and (max-width: 991px) {
 
-    .col-12-md{
-        width: 100%;
+    .col_left{
+        width: 5rem;
     }
     
-    .col-11-md {
-        width: calc((100% / 12) *11);
-    }
-    
-    .col-8-md {
-        width: calc((100% / 12) *8);
-    }
-    
-    .col-4-md {
-        width: calc((100% / 12) *4);
-    }
-    
-    .col-1-md {
-        width: calc((100% / 12) *1);
+    .col-right{
+        width: calc(100% - 5rem);
     }
 
+    .right_side {
+        display: none;
+    }
+
+    .img_box_size_md {
+        width: 4.5rem;
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;
     
+    }
 }
 
 @media screen and (max-width: 540px) {
 
-    .col-12-sm{
+    .col-12-sm {
         width: 100%;
     }
-    
+
     .col-11-sm {
         width: calc((100% / 12) *11);
     }
-    
+
     .col-8-sm {
         width: calc((100% / 12) *8);
     }
-    
+
     .col-4-sm {
         width: calc((100% / 12) *4);
     }
-    
+
     .col-1-sm {
         width: calc((100% / 12) *1);
     }
 
-    .hidden-sm{
+    .hidden-sm {
         display: none;
     }
-    
+
 }
