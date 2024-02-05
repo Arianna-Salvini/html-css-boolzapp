@@ -71,7 +71,9 @@
 
 /* Debug */
 
-.debug.menu_icon {
+.debug.menu_icon,
+.debug.right_menu
+ {
     background-color: coral;
 }
 
@@ -121,6 +123,25 @@
 }
 
 /* right dìside - chat */
+
+.chat_menu{
+    height: 5rem;
+    background-color: #ff9d1e;
+    justify-content: space-between;
+}
+
+
+.left_menu,
+.right_menu{
+    width: 50%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.icons_menu{
+    text-align: end;
+}
+
 
 /* media query */
 
