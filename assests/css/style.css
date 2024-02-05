@@ -114,6 +114,14 @@ i {
 
 }
 
+ .typing_bar{                             /* Da finire */
+    width:100%;
+    padding: 0.5rem 3rem;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    border-style: none;
+}
+
 .name_profile_prev{
     margin-top: 0.3rem;
     font-size: 1rem;
