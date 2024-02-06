@@ -38,6 +38,7 @@
     background-color: var(--zapp-light);
     width: calc(100vw - 25%);
     height: calc(100% - 2rem);
+    max-width: 1200px;
 
 }
 
@@ -52,11 +53,11 @@
 }
 
 .col_left {
-    width: 35%;
+    width: 389px;
 }
 
 .col-right {
-    width: calc(100% - 35%);
+    width: calc(100% - 389px);
 }
 
 .left_side_img {
@@ -75,11 +76,11 @@ i {
 }
 
 /* left side - menu */
-.icons_menu.right_side{
-        padding: 0.7rem 1rem;
+.icons_menu.right_side {
+    padding: 0.7rem 1rem;
 }
 
-.notify{
+.notify {
     background-color: var(--zapp-highlight);
 }
 
@@ -87,7 +88,7 @@ i {
     height: 3rem;
 }
 
-.icon_search{
+.icon_search {
     width: 4.5rem;
     height: 3rem;
     padding: 0.8rem;
@@ -103,43 +104,46 @@ i {
     background-color: var(--zapp-light);
     border-radius: 50%;
     text-align: center;
-    
+
 }
 
 .notification_text,
-.name_profile_prev{
+.name_profile_prev {
     font-size: 0.9rem;
     padding-top: 0.6rem;
     padding-left: 0.25rem;
 
 }
 
- .typing_bar{                             /* Da finire */
-    width:100%;
+.typing_bar {
+    /* Da finire */
+    width: 100%;
     padding: 0.5rem 3rem;
     font-size: 0.8rem;
     border-radius: 0.5rem;
     border-style: none;
 }
 
-.name_profile_prev{
+.name_profile_prev {
     margin-top: 0.3rem;
     font-size: 1rem;
 }
 
-.chat_list_card{
+.chat_list_card {
     background-color: var(--zapp-lighter);
     border-bottom: 1px solid var(--zapp-light);
+
+
 }
 
-.notification_activeted, 
-.text_preview
-{
+.notification_activeted,
+.text_preview {
     font-size: 0.8rem;
     color: var(--zapp-darker);
     text-decoration: underline;
     padding-left: 0.25rem;
 }
+
 .chat_list {
     height: calc(100% - 13rem);
     overflow-y: scroll;
@@ -153,14 +157,14 @@ i {
 .chat_menu {
     height: 4.5rem;
     justify-content: space-between;
-    
+
 }
 
 .profile_name {
-        font-size: 1rem;
-       line-height: 1.5rem;
-       margin-top: 0.8rem;
-    }
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 0.8rem;
+}
 
 .last_access {
     color: var(--zapp-dark);
@@ -174,8 +178,8 @@ i {
     background-color: var(--zapp-light);
 }
 
-.right_menu{
-        padding: 0.7rem 1rem;
+.right_menu {
+    padding: 0.7rem 1rem;
 }
 
 .img_profile {
@@ -268,11 +272,11 @@ i {
 
     }
 
-    .hidden-md{
+    .hidden-md {
         display: none;
     }
 
-    .chat_list{
+    .chat_list {
         height: 100%;
     }
 
