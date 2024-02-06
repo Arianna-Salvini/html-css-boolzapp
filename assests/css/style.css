@@ -173,7 +173,6 @@ i {
 
 .left_menu,
 .right_menu {
-    width: 50%;
     height: 100%;
     background-color: var(--zapp-light);
 }
@@ -205,6 +204,27 @@ i {
     overflow-y: scroll;
     flex-direction: column;
     flex-wrap: nowrap;
+}
+
+/* massages style */
+
+.arrived_message,
+.sent_message{
+    padding: 1rem;
+    margin: 0.5rem 3rem;
+    background-color: var(--zapp-lighter);
+    border-radius: 0.5rem;
+    max-width: 60%;
+}
+
+.arrived_message{
+    align-self: flex-start;
+    background-color: var(--zapp-lighter);
+}
+
+.sent_message{
+    align-self: flex-end;
+    background-color: var(--zapp-sent-bubble);
 }
 
 /* texting */
@@ -246,26 +266,7 @@ i {
     padding: 1.5rem;
 }
 
-/* massages style */
 
-.arrived_message,
-.sent_message{
-    padding: 1rem;
-    margin: 0.5rem 3rem;
-    background-color: var(--zapp-lighter);
-    border-radius: 0.5rem;
-    max-width: 60%;
-}
-
-.arrived_message{
-    align-self: flex-start;
-    background-color: var(--zapp-lighter);
-}
-
-.sent_message{
-    align-self: flex-end;
-    background-color: var(--zapp-sent-bubble);
-}
 
 /* media query */
 
