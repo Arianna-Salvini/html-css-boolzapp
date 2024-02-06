@@ -107,14 +107,25 @@ i {
     height: 3rem;
     text-align: center;
     padding-top: 0.4rem;
+    color: var(--zapp-darker);
+    position: relative;
+
+    & .icon_search{
+        width: 4.5rem;
+        height: 3rem;
+        padding: 0.8rem;
+        text-align: center;
+        position: absolute;
+        top: 0.1rem;
+        left: -0.3rem;
+    }
+
+    & .fa-magnifying-glass{
+        font-size: 1rem;
+    }
+    
 }
 
-.icon_search {
-    width: 4.5rem;
-    height: 3rem;
-    padding: 0.8rem;
-    text-align: center;
-}
 
 .fa-bell-slash {
     width: 3rem;
