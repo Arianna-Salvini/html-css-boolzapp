@@ -201,7 +201,10 @@ i {
     width: 100%;
     height: calc(100% - 9rem);
     background-image: url(../img/mine.jpg);
+    padding-top: 2rem;
     overflow-y: scroll;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 /* texting */
@@ -243,8 +246,26 @@ i {
     padding: 1.5rem;
 }
 
+/* massages style */
 
+.arrived_message,
+.sent_message{
+    padding: 1rem;
+    margin: 0.5rem 3rem;
+    background-color: var(--zapp-lighter);
+    border-radius: 0.5rem;
+    max-width: 60%;
+}
 
+.arrived_message{
+    align-self: flex-start;
+    background-color: var(--zapp-lighter);
+}
+
+.sent_message{
+    align-self: flex-end;
+    background-color: var(--zapp-sent-bubble);
+}
 
 /* media query */
 
@@ -317,4 +338,8 @@ i {
         width: 100%;
     }
 
+    .chat_massages_box{
+        max-width: 100%;
+
+    }: 
 }
