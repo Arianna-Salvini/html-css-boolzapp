@@ -54,6 +54,7 @@
 
 .col_left {
     width: 389px;
+    border-right:1px solid var(--zapp-dark);
 }
 
 .col-right {
@@ -74,6 +75,24 @@
 i {
     font-size: 1.3rem;
 }
+
+/* scroolbar */
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--zapp-light);
+    
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--zapp-light);
+    box-shadow: inset 0 0 3px var(--zapp-dark);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-bottom: 100vh solid var(--zapp-lighter);
+    border-radius: 10px;
+    
+  }
 
 /* left side - menu */
 .icons_menu.right_side {
@@ -125,6 +144,8 @@ i {
     border-radius: 0.5rem;
     border-style: none;
 }
+
+
 
 .name_profile_prev {
     margin-top: 0.3rem;
