@@ -156,11 +156,18 @@ i {
     border-style: none;
 }
 
-
+.preview_text {
+    justify-content: space-between;
+    align-items: center;
+}
 
 .name_profile_prev {
     margin-top: 0.3rem;
     font-size: 1rem;
+}
+
+.time{
+    padding: 1rem;
 }
 
 .chat_list_card {
@@ -169,10 +176,10 @@ i {
 }
 
 .notification_activeted,
-.text_preview {
+.text_preview,
+.time {
     font-size: 0.8rem;
     color: var(--zapp-darker);
-    text-decoration: underline;
     padding-left: 0.25rem;
 }
 
@@ -291,6 +298,7 @@ i {
     border-radius: 0.7rem;
     font-size: 1rem;
     border-style: none;
+
 }
 
 .fa-face-grin,
