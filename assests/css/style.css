@@ -79,7 +79,7 @@ i {
 /* scroolbar */
 
 ::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.3rem;
     background-color: var(--zapp-light);
     
   }
