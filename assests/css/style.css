@@ -217,7 +217,7 @@ i {
 }
 
 .right_menu {
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 0.5rem;
 }
 
 .img_profile {
@@ -310,8 +310,6 @@ i {
 .fa-microphone {
     padding: 1.5rem;
 }
-
-
 
 /* media query */
 
