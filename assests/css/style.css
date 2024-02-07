@@ -274,6 +274,11 @@ i {
     width: 100%;
     justify-items: space-around;
     align-content: center;
+
+    & form {
+        width: calc(100% - 9rem);
+        display: flex;
+    }
 }
 
 .texting_box,
@@ -291,7 +296,7 @@ i {
 
 
 [placeholder="Type a message"] {
-    width: calc(100% - 9rem);
+    width: 100%;
     height: 80%;
     padding-left: 1rem;
     margin: auto;
