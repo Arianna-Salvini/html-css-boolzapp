@@ -155,7 +155,6 @@ i {
 
 .search_bar{
     height: 4rem;
-    border: 1px dashed;
 
     > form{
         height: 90%;
@@ -178,6 +177,28 @@ i {
         align-self: center;
     }
 }
+
+/* contact list */
+.chat_list{
+    height: calc(100% - 14.3rem);
+    overflow-y: auto;
+
+    .chat_list_card{
+        background-color: var(--zapp-lighter);
+        border-bottom: 1px solid var(--zapp-light);
+    }
+}
+
+.preview_text{
+    align-content: center;
+    justify-content: space-between;
+}
+
+.time{
+    color: var(--zapp-darker);
+    padding-right: 0.5rem;
+}
+
 
 
 /* media query */
