@@ -150,6 +150,36 @@ i {
     color: var(--zapp-darker);
     font-size: 0.8rem;
 }
+
+/* Searching bar */
+
+.search_bar{
+    height: 4rem;
+    border: 1px dashed;
+
+    > form{
+        height: 90%;
+        width: 100%;
+        margin: 0.2rem;
+        background-color: var(--zapp-lighter);
+        border: 1px solid var(--zapp-dark);
+        border-radius: 1rem;
+        align-self: center;
+    }
+
+    .typing_bar{
+        border: none;
+        outline-style: none;
+    }
+
+    & i{
+        color: var(--zapp-dark);
+        padding: 0 1.5rem;
+        align-self: center;
+    }
+}
+
+
 /* media query */
 
 @media screen and (max-width: 991px) {
