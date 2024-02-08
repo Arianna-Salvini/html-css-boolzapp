@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Debug */
+
+img{
+    display: none;
+}
+
+/* Utility */
+
+:root {
+    --zapp-bg-top: #009688;
+    --zapp-bg-bottom: #dbdbd2;
+    --zapp-light: #eaeaea;
+    --zapp-lighter: #ffffff;
+    --zapp-darkest: #000000;
+    --zapp-darker: #6b7376;
+    --zapp-dark: #b1b1b1;
+    --zapp-highlight: #8edafc;
+    --zapp-sent-bubble: #d5f9ba;
+    --zapp-tiping: #f3eeea;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom,
+            var(--zapp-bg-top) 0%,
+            var(--zapp-bg-top) 10%,
+            var(--zapp-bg-bottom) 10%,
+            var(--zapp-bg-bottom) 100%);
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--zapp-light);
+    width: calc(100vw - 25%);
+    height: calc(100% - 2rem);
+    max-width: 1200px;
+
+    @media screen and (max-width: 991px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.d_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.col_left {
+    width: 389px;
+    border-right: 1px solid var(--zapp-dark);
+
+    @media screen and (max-width: 991px) {
+        .col_left {
+            width: 5rem;
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        display: none;
+    }
+}
+
+.col-right {
+    width: calc(100% - 389px);
+
+    @media screen and (max-width: 991px) {
+        width: calc(100% - 4.5rem);
+    }
+
+    @media screen and (max-width: 540px) {
+        width: 100%;
+    }
+}
+
+/* Left side app */
+/* user menu */
+
+
+
+/* media query */
+
+@media screen and (max-width: 991px) {
+
+    .right_side {
+        display: none;
+    }
+
+    .img_box_size_md {
+        width: 4.5rem;
+    }
+    .hidden-md {
+        display: none;
+    }
+
+    .chat_list {
+        height: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .hidden-sm {
+        display: none;
+    }
+
+    .left_menu {
+        width: 100%;
+    }
+    .chat_massages_box{
+        max-width: 100%;
+    }: 
+}
