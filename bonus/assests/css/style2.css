@@ -120,6 +120,7 @@ i {
         justify-content: space-between;
         background-color: var(--zapp-light);
     }    
+    
 
 }
 
@@ -204,9 +205,8 @@ i {
 /* media query */
 
 @media screen and (max-width: 991px) {
-
-    .right_side {
-        display: none;
+    .col_left{
+        width: 5rem;
     }
 
     .img_box_size_md {
@@ -220,7 +220,6 @@ i {
     .chat_list {
         height: 100%;
     }
-
 
 }
 
